@@ -148,6 +148,8 @@
     <Compile Include="Controllers\RateController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Filters\AuthorizeTokenValidityAttribute.cs" />
+    <Compile Include="Filters\TokenValidityActionFilterAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

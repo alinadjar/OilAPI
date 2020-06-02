@@ -8,6 +8,7 @@ using System.Security.Claims;
 using System.Web;
 using System.Web.Http;
 using System.Net;
+using API.Filters;
 
 namespace API.Controllers
 {
@@ -49,7 +50,7 @@ namespace API.Controllers
             return NotFound();
         }
 
-
+        [TokenValidityActionFilter]
         [HttpGet]
         [Route("medals")]
         public HttpResponseMessage Medals()
@@ -75,7 +76,7 @@ namespace API.Controllers
         }
 
 
-
+        [TokenValidityActionFilter]
         [HttpGet]
         [Route("medals/super")]
         public HttpResponseMessage MedalsSuper()
